@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fav Food</title>
+    <style>
+      h1 {
+        position: absolute;
+        top: 140px;
+        left: 250px;
+      }
+      h3 {
+        color: black;
+        text-align: center;
+      }
+          p{
+        color: white;
+        text-align: center;
+      }
+      .food_image {
+        width: 50%;
+        height: 50%;
+      }
+
+      img {
+        height: 30%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+      span {
+        padding-left: 60px;
+      }
+    </style>
+ </head>
+
+  <body>
+    <div>
+      <div>
+        <div style="background-color: pink" class="food_image">
+          <img
+            id="titleImage"
+            src="https://natashaskitchen.com/wp-content/uploads/2020/07/Vanilla-Cake-SQ-500x500.jpg"
+            alt="pic3"
+          />
+          <h1 id="titleName">My favourite food</h1>
+        </div>
+        <div style="background-color: gray" class="food_image">
+          <h3 id="favFood1">CHOCOLATES</h3>
+          <p id="foodDescription1">My dopamine controller</p>
+          <img id="favFoodImage1"
+            src="https://cdn.shopify.com/s/files/1/0279/6329/3831/products/IMG_7057_1024x1024.jpg?v=1649306527"
+            alt="pic2"
+          />
+        </div>
+        <div style="background-color: orange" class="food_image">
+          <h3 id="favFood2">Macroons</h3>
+          <p id="foodDescription2">Tasty as well as pretty to your eyes</p>
+          <img id="favFoodImage2"
+            src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2021/11/03/colorful-french-macarons-bakery-box-wood-surface-.jpg.rend.hgtvcom.406.305.suffix/1635922448414.jpeg"
+            alt="pic1"
+          />
+        </div>
+        <div style="background-color: red" class="food_image">
+          <h3 id="favFood3">ICE-cream</h3>
+          <p id="foodDescription3">Its never too cold for icecream</p>
+          <img id="favFoodImage3"
+            src="https://img.etimg.com/thumb/msid-84939728,width-525,height-393,imgsize-381352,resizemode-8,quality-100/magazines/panache/from-the-us-russia-to-india-an-ice-cream-bowl-has-a-long-political-history.jpg"
+            alt="pic4"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("images");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+  </script>
+</html>
